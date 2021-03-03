@@ -309,6 +309,7 @@ html{
     justify-content: space-evenly;
     background-color: black;
     align-items: center;
+    padding: 5% 0 5%;
 }
 
 .intro__img{
@@ -316,9 +317,7 @@ html{
 }
 
 .intro__img img{
-    width: 60%;
-    margin: 10% auto;
-    display: block;
+    width: 70%;
 }
 
 .intro__txt{
@@ -366,6 +365,10 @@ html{
     backface-visibility: hidden;
     height: 400px;
   }
+
+  .container:hover{
+    filter: grayscale(1);
+  }
   
   .middle {
     transition: .5s ease;
@@ -390,6 +393,7 @@ html{
     color: black;
     font-size: 7rem;
     font-family: 'impact';
+    text-transform: capitalize;
   }
 
   .btn__contacto{
