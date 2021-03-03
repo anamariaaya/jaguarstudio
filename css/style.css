@@ -300,3 +300,11 @@ html{
   }
 
   /*FIN HEADER*/
+
+  /*INTRO*/
+
+  .intro{
+      display: flex;
+      flex-direction: row;
+      
+  }
