@@ -33,7 +33,7 @@ html{
 
 .header__back{
     width: 100%;
-    background-image: url('../header2.jpg');
+    background-image: url('../header3.jpg');
     height: 100vh;
     background-size: cover;
     background-position: bottom right;
@@ -79,11 +79,12 @@ html{
     color: #ee00f9;
     font-family: sans-serif;
     position: absolute;
-    font-size: 16rem;
+    font-size: 18rem;
     padding: 30px;
     font-family: 'led';
     margin-bottom: 9%;
-    margin-left: 3%;
+    margin-left: 0%;
+    padding-left: 0;
   }
   .wrapper h1.glitch::before, .wrapper h1.glitch::after {
     padding: 30px;
@@ -94,6 +95,7 @@ html{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    padding-left: 0;
   }
   .wrapper h1.glitch::before {
     left: 2px;
@@ -105,6 +107,7 @@ html{
     animation-iteration-count: infinite;
     animation-direction: reverse-alternate;
     opacity: 0.8;
+    padding-left: 0;
   }
   .wrapper h1.glitch::after {
     left: -3px;
@@ -116,136 +119,137 @@ html{
     animation-iteration-count: infinite;
     animation-direction: reverse-alternate;
     opacity: 0.8;
+    padding-left: 0;
   }
   
   @keyframes glitch-animation-1 {
     0% {
-      clip: rect(15px, 800px, 59px, 30px);
+      clip: rect(15px, 820px, 59px, 0px);
     }
     5% {
-      clip: rect(105px, 800px, 8px, 30px);
+      clip: rect(105px, 820px, 18px, 0px);
     }
     10% {
-      clip: rect(25px, 800px, 164px, 30px);
+      clip: rect(25px, 820px, 164px, 0px);
     }
     15% {
-      clip: rect(141px, 800px, 27px, 30px);
+      clip: rect(141px, 820px, 27px, 0px);
     }
     20% {
-      clip: rect(115px, 800px, 53px, 30px);
+      clip: rect(115px, 820px, 53px, 0px);
     }
     25% {
-      clip: rect(79px, 800px, 65px, 30px);
+      clip: rect(79px, 820px, 85px, 0px);
     }
     30% {
-      clip: rect(10px, 800px, 4px, 30px);
+      clip: rect(10px, 820px, 14px, 0px);
     }
     35% {
-      clip: rect(136px, 800px, 156px, 30px);
+      clip: rect(136px, 820px, 156px, 0px);
     }
     40% {
-      clip: rect(22px, 800px, 120px, 30px);
+      clip: rect(22px, 820px, 120px, 0px);
     }
     45% {
-      clip: rect(40px, 800px, 132px, 30px);
+      clip: rect(40px, 820px, 132px, 0px);
     }
     50% {
-      clip: rect(12px, 800px, 195px, 30px);
+      clip: rect(12px, 820px, 215px, 0px);
     }
     55% {
-      clip: rect(38px, 800px, 141px, 30px);
+      clip: rect(38px, 820px, 141px, 0px);
     }
     60% {
-      clip: rect(108px, 800px, 133px, 30px);
+      clip: rect(108px, 820px, 133px, 0px);
     }
     65% {
-      clip: rect(100px, 800px, 75px, 30px);
+      clip: rect(100px, 820px, 75px, 0px);
     }
     70% {
-      clip: rect(68px, 800px, 206px, 30px);
+      clip: rect(68px, 820px, 206px, 0px);
     }
     75% {
-      clip: rect(149px, 800px, 41px, 30px);
+      clip: rect(149px, 820px, 41px, 0px);
     }
     80% {
-      clip: rect(31px, 800px, 19px, 30px);
+      clip: rect(31px, 820px, 19px, 0px);
     }
     85% {
-      clip: rect(38px, 800px, 69px, 30px);
+      clip: rect(38px, 820px, 69px, 0px);
     }
     90% {
-      clip: rect(95px, 800px, 220px, 30px);
+      clip: rect(95px, 820px, 250px, 0px);
     }
     95% {
-      clip: rect(85px, 800px, 226px, 30px);
+      clip: rect(85px, 820px, 226px, 0px);
     }
     100% {
-      clip: rect(43px, 800px, 22px, 30px);
+      clip: rect(43px, 820px, 42px, 0px);
     }
   }
   @keyframes glitch-animation-2 {
     0% {
-      clip: rect(122px, 800px, 205px, 30px);
+      clip: rect(122px, 820px, 225px, 0px);
     }
     5% {
-      clip: rect(150px, 800px, 88px, 30px);
+      clip: rect(150px, 820px, 88px, 0px);
     }
     10% {
-      clip: rect(96px, 800px, 43px, 30px);
+      clip: rect(96px, 820px, 63px, 0px);
     }
     15% {
-      clip: rect(106px, 800px, 165px, 30px);
+      clip: rect(106px, 820px, 165px, 0px);
     }
     20% {
-      clip: rect(51px, 800px, 110px, 30px);
+      clip: rect(51px, 820px, 150px, 0px);
     }
     25% {
-      clip: rect(128px, 800px, 37px, 30px);
+      clip: rect(128px, 820px, 37px, 0px);
     }
     30% {
-      clip: rect(39px, 800px, 237px, 30px);
+      clip: rect(39px, 820px, 257px, 0px);
     }
     35% {
-      clip: rect(107px, 800px, 19px, 30px);
+      clip: rect(107px, 820px, 19px, 0px);
     }
     40% {
-      clip: rect(118px, 800px, 46px, 30px);
+      clip: rect(118px, 820px, 46px, 0px);
     }
     45% {
-      clip: rect(24px, 800px, 206px, 30px);
+      clip: rect(24px, 820px, 206px, 0px);
     }
     50% {
-      clip: rect(105px, 800px, 188px, 30px);
+      clip: rect(105px, 820px, 188px, 0px);
     }
     55% {
-      clip: rect(111px, 800px, 11px, 30px);
+      clip: rect(111px, 820px, 11px, 0px);
     }
     60% {
-      clip: rect(23px, 800px, 18px, 30px);
+      clip: rect(23px, 820px, 68px, 0px);
     }
     65% {
-      clip: rect(44px, 800px, 20px, 30px);
+      clip: rect(44px, 820px, 40px, 0px);
     }
     70% {
-      clip: rect(8px, 800px, 39px, 30px);
+      clip: rect(8px, 820px, 39px, 0px);
     }
     75% {
-      clip: rect(38px, 800px, 89px, 30px);
+      clip: rect(38px, 820px, 89px, 0px);
     }
     80% {
-      clip: rect(141px, 800px, 151px, 30px);
+      clip: rect(141px, 820px, 151px, 0px);
     }
     85% {
-      clip: rect(127px, 800px, 55px, 30px);
+      clip: rect(127px, 820px, 55px, 0px);
     }
     90% {
-      clip: rect(99px, 800px, 74px, 30px);
+      clip: rect(99px, 820px, 74px, 0px);
     }
     95% {
-      clip: rect(50px, 800px, 30px, 30px);
+      clip: rect(50px, 820px, 30px, 0px);
     }
     100% {
-      clip: rect(81px, 800px, 8px, 30px);
+      clip: rect(81px, 820px, 8px, 0px);
     }
   }
 
@@ -253,11 +257,12 @@ html{
     color: #ee00f9;
     font-family: sans-serif;
     position: absolute;
-    font-size: 16rem;
+    font-size: 18rem;
     padding: 30px;
+    padding-left: 0;
     font-family: 'led';
-    margin-bottom: 1%;
-    margin-left: 3%;
+    margin-bottom: 0%;
+    margin-left: 0%;
   }
   .wrapper h1.glitch2::before, .wrapper h1.glitch2::after {
     padding: 30px;
@@ -268,6 +273,7 @@ html{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    padding-left: 0;
   }
   .wrapper h1.glitch2::before {
     left: 2px;
@@ -279,6 +285,7 @@ html{
     animation-iteration-count: infinite;
     animation-direction: reverse-alternate;
     opacity: 0.8;
+    padding-left: 0;
   }
   .wrapper h1.glitch2::after {
     left: -3px;
