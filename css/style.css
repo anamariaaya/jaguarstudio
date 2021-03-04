@@ -100,24 +100,24 @@ html{
   .wrapper h1.glitch::before {
     left: 2px;
     text-shadow: -2px 0 red;
-    -webkit-animation-name: glitch-animation-1;
-    -webkit-animation-duration: 15s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: reverse-alternate;
+    animation-name: glitch-animation-1;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
     opacity: 0.8;
     padding-left: 0;
   }
   .wrapper h1.glitch::after {
     left: -3px;
     text-shadow: -2px 0 blue;
-    -webkit-animation-name: glitch-animation-2;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: reverse-alternate;
+    animation-name: glitch-animation-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
     opacity: 0.8;
     padding-left: 0;
   }

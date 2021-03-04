@@ -1,0 +1,31 @@
+{
+  "name": "jaguarstudio",
+  "version": "1.0.0",
+  "description": "Tattoo Studio",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-webp": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anamariaaya/jaguarstudio.git"
+  },
+  "keywords": [
+    "Gulp",
+    "HTML5",
+    "Web",
+    "Design"
+  ],
+  "author": "Andreas Koch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anamariaaya/jaguarstudio/issues"
+  },
+  "homepage": "https://github.com/anamariaaya/jaguarstudio#readme"
+}
