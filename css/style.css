@@ -77,8 +77,76 @@ html{
 
 
 /*PRUEBA TEXTO HEADER*/
+.prueba{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content:end;
+}
+.titulo{
+  font-family: 'led';
+  color: #ee00f9;
+  font-size: 15rem;
+  line-height: 1.2;
+  padding-left: 4rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pruebas 2s linear infinite; 
+}
 
-  .wrapper h1.glitch {
+/* .titulo:after{
+  content: '';
+  background-color: rgba(255,255,255,.7);
+  width: 70rem;
+  height: 17rem;
+  position: absolute;
+  transform: translate(-100%, 0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: red;
+  animation: pruebas 1s linear infinite;
+} */
+
+@keyframes pruebas{
+  0%{
+   background-image: linear-gradient(to bottom, white 0%, #ee00f9 30%);
+  }
+  10%{
+    background-image: linear-gradient(to bottom, white 15%, #ee00f9 40%);
+  }
+  20%{
+    background-image: linear-gradient(to top, white 20%, #ee00f9 50%);
+  }
+  30%{
+     background-image: linear-gradient(to top, white 25%, #ee00f9 60%);
+  }
+  40%{
+    background-image: linear-gradient(to bottom,#ee00f9 10%, white 40%, #ee00f9 20%);
+  }
+  50%{
+     background-image: linear-gradient(to bottom,#ee00f9 10%, white 55%, #ee00f9 40%);
+  }
+  60%{
+    background-image: linear-gradient(to top, white 20%, #ee00f9 30%);
+  }
+  70%{
+     background-image: linear-gradient(to top, white 30%, #ee00f9 25%);
+  }
+  80%{
+    background-image: linear-gradient(to bottom, white 10%, #ee00f9 20%);
+  }
+  90%{
+    background-image: linear-gradient(to bottom,#ee00f9 10%, white 55%, #ee00f9 40%);
+ }
+ 100%{
+   background-image: linear-gradient(to top, white 20%, #ee00f9 30%);
+ }
+}
+
+
+
+  /* .wrapper h1.glitch {
     color: #ee00f9;
     font-family: sans-serif;
     position: absolute;
@@ -300,7 +368,7 @@ html{
     animation-iteration-count: infinite;
     animation-direction: reverse-alternate;
     opacity: 0.8;
-  }
+  } */
 
   /*FIN HEADER*/
 
