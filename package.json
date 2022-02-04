@@ -1,15 +1,8 @@
 {
   "name": "jaguarstudio",
   "version": "1.0.0",
-  "description": "Tattoo Studio",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-webp": "^4.0.1"
-  },
+  "description": "Website Jaguar Studio Barcelona",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,15 +11,36 @@
     "url": "git+https://github.com/anamariaaya/jaguarstudio.git"
   },
   "keywords": [
-    "Gulp",
-    "HTML5",
-    "Web",
-    "Design"
+    "Tattoo",
+    "art",
+    "asrtist",
+    "artista",
+    "barcelona",
+    "arte",
+    "tatuaje"
   ],
-  "author": "Andreas Koch",
+  "author": "Ana María Aya",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/anamariaaya/jaguarstudio/issues"
   },
-  "homepage": "https://github.com/anamariaaya/jaguarstudio#readme"
+  "homepage": "https://github.com/anamariaaya/jaguarstudio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.16",
+    "gulp-avif": "^1.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-terser-js": "^5.2.2",
+    "gulp-webp": "^4.0.0",
+    "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }
