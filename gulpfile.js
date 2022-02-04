@@ -50,7 +50,7 @@ function imagenes(done) {
 
 function versionWebp( done ) {
     const opciones = {
-        quality: 50
+        quality: 90
     };
     src('src/img/**/*.{png,jpg}')
         .pipe( webp(opciones) )
@@ -60,7 +60,7 @@ function versionWebp( done ) {
 
 function versionAvif( done ) {
     const opciones = {
-        quality: 50
+        quality: 90
     };
     src('src/img/**/*.{png,jpg}')
         .pipe( avif(opciones) )

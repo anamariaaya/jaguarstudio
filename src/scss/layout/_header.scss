@@ -1,0 +1,95 @@
+@use 'base/variables' as v;
+
+.header{
+    width: 100%;
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-image: url('../img/header.jpg');
+    background-position: center center;
+    position: relative;
+    height: 50vh;
+
+    &.inicio{
+        background-position: bottom right;
+        background-image: url('../img/mainheader.jpg');
+        height: 100vh;
+        .menu-bar{
+            background-color: transparent;
+        }
+    }
+
+    .menu-bar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 1rem;
+        background-color: rgb(255,255,255,0.2);
+        font-family: v.$fuenteTitle;
+
+        a{
+            color: v.$blanco;
+            font-size: 5rem;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 5px black;
+            filter: blur(3px);
+            &:hover{
+                filter: none;
+            }
+        }
+    }
+}
+
+.index-title{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: flex-end;
+        h1{
+            font-family: v.$fuenteLed;
+            color: #ee00f9;
+            font-size: 15rem;
+            line-height: 1.2;
+            padding-left: 4rem;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: pruebas 2s linear infinite;
+        }
+}
+
+@keyframes pruebas{
+    0%{
+     background-image: linear-gradient(to bottom, white 0%, #ee00f9 10%);
+    }
+    10%{
+      background-image: linear-gradient(to bottom, white 15%, #ee00f9 25%);
+    }
+    20%{
+      background-image: linear-gradient(to top, white 20%, #ee00f9 30%);
+    }
+    30%{
+       background-image: linear-gradient(to top, white 25%, #ee00f9 35%);
+    }
+    40%{
+      background-image: linear-gradient(to bottom,#ee00f9 20%, white 40%, #ee00f9 50%);
+    }
+    50%{
+       background-image: linear-gradient(to bottom,#ee00f9 25%, white 55%, #ee00f9 65%);
+    }
+    60%{
+      background-image: linear-gradient(to top, white 20%, #ee00f9 30%);
+    }
+    70%{
+       background-image: linear-gradient(to top, white 30%, #ee00f9 40%);
+    }
+    80%{
+      background-image: linear-gradient(to bottom, white 10%, #ee00f9 20%);
+    }
+    90%{
+      background-image: linear-gradient(to bottom,#ee00f9 10%, white 55%, #ee00f9 65%);
+   }
+   100%{
+     background-image: linear-gradient(to top, white 20%, #ee00f9 30%);
+   }
+  }
