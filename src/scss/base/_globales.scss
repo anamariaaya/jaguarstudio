@@ -1,0 +1,82 @@
+@use "sass:math";
+@use 'variables' as v;
+@use 'mixins' as m;
+
+@font-face{
+    font-family:'led';
+    src:url('../fonts/TheLedDisplaySt.ttf');
+}
+
+@font-face{
+    font-family:'impact';
+    src:url('../fonts/321impact.ttf');
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: v.$fuenteTexto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    background-color: v.$negro;
+}
+
+p {
+    color: v.$blanco;
+    font-size: 2rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: v.$fuenteTitle;
+    margin: math.div(v.$separacion, 2) 0;
+    font-weight: 300;
+    text-align: center;
+    color: v.$blanco;
+}
+
+h1 {
+
+    font-size: 3.8rem;
+    @include m.tablet{
+        font-size: 8rem;
+    }
+}
+h2 {
+    font-size: 3.2rem;
+    @include m.tablet{
+        font-size: 6rem;
+    }
+}
+h3 {
+    font-size: 2.6rem;
+    @include m.tablet{
+        font-size: 4.5rem;
+    }
+}
+
+p{
+    font-size: 1.6rem;
+    @include m.tablet{
+        font-size: 2rem;
+    }
+}
