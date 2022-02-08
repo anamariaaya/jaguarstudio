@@ -10,7 +10,10 @@
 </head>
 <body>
     <header class="header <?php echo $inicio ? 'inicio' : ''; ?>">
-        <nav class="menu-bar">
+        <div class="mobile-menu">
+            <img src="/build/img/barras.svg" alt="ícono menú responsive">
+        </div>    
+        <nav class="menu-bar mostrar">
             <a href="/" class="<?php echo $inicio ? 'no-filter' : ''; ?>">Home</a>
             <a href="/tattoos.php" class="<?php echo $tattoos ? 'no-filter' : ''; ?>">Tattoos</a>
             <a href="/artwork.php" class="<?php echo $artwork ? 'no-filter' : ''; ?>">Artwork</a>

@@ -3,5 +3,6 @@
     incluirTemplate('header',$inicio = false, $tattoos = true);
 ?>
     
-</body>
-</html>
+<?php
+    incluirTemplate('footer');
+?>
