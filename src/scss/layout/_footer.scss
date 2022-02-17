@@ -1,6 +1,7 @@
 @use 'base/variables' as v;
 
 .footer{
+    margin-top: 2rem;
     padding: v.$separacion 0;
     background-color: v.$azul;
     p{

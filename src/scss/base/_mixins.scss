@@ -30,6 +30,11 @@
         @content;
     }
 }
+@mixin giant {
+    @media (min-width: #{v.$giant}) {
+        @content;
+    }
+}
 
 @mixin grid($columns, $spacing) {
     display: grid;

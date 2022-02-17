@@ -1,0 +1,49 @@
+@use 'base/mixins' as m;
+
+.about{
+    @include m.grid(1, 2rem);
+    @include m.tablet{
+        align-items: start;
+    }
+
+    @include m.bigscreen{
+        @include m.grid(2, 3rem);       
+    }
+
+    @include m.giant{
+        @include m.grid(2, 4rem);       
+    }
+
+    p{
+        line-height: 1.2;
+        text-align: justify;
+        @include m.tablet{
+            text-align: center;
+        }
+        @include m.desktop{
+            font-size: 2rem;
+        }
+        @include m.bigscreen{
+            font-size: 2.4rem;
+        }
+        @include m.giant{
+            font-size: 3.2rem;
+            line-height: 1.4;
+        }
+    }
+
+    img{
+        width: 100%;
+        margin: auto;
+        @include m.phone{
+            width: 85%;
+        }
+        @include m.tablet{
+            width: 70%;            
+        }
+        @include m.bigscreen{
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
