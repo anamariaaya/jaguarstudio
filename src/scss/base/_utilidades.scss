@@ -1,3 +1,6 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
 .no-filter{
     filter:none !important;
 }
@@ -5,4 +8,26 @@
 .secciones{
     width: 95%;
     margin: auto;
+}
+
+.boton-verde{
+    @include m.boton(#07cc17, inline-block);
+    color: v.$negro;
+}
+.boton-rojo{
+    @include m.boton(#8f1f1f, inline-block);
+}
+.boton-amarillo{
+    @include m.boton(#f0b20a, inline-block);
+}
+
+.boton-verde-block{
+    @include m.boton(#07cc17, block);
+    color: v.$negro;
+}
+.boton-rojo-block{
+    @include m.boton(#8f1f1f, block);
+}
+.boton-amarillo-block{
+    @include m.boton(#f0b20a, block);
 }

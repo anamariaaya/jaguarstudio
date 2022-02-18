@@ -179,3 +179,32 @@
      background-image: linear-gradient(to top, white 20%, #ee00f9 30%);
    }
   }
+
+  .section-title{
+    display: grid;
+    place-items: center;
+    height: 40vh;
+      h1{
+        text-transform: uppercase;
+        color: v.$fucsia;
+        text-shadow: 3px 3px 5px #fff;
+        font-size: 5rem;
+        @include m.phone{
+          font-size: 7rem;
+        }
+        @include m.tablet{
+          font-size: 12rem;
+        }
+        @include m.desktop{
+          padding-top: 12rem;
+          font-size: 15rem;
+        }
+        @include m.bigscreen{
+          font-size: 18rem;
+        }
+        @include m.giant{
+          padding-top: 20rem;
+          font-size: 28rem;
+        }
+      }
+  }

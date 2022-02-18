@@ -1,0 +1,85 @@
+@use "sass:math";
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.enlaces{
+    @include m.grid(1, math.div(v.$separacion, 2));
+    place-items: center;
+    margin-top: 4rem;
+    @include m.tablet{
+        @include m.grid(2, math.div(v.$separacion, 2));
+        margin-top: 7rem;
+    }
+
+    @include m.bigscreen{
+        @include m.grid(4, math.div(v.$separacion, 2));
+    }
+
+    a{
+        height: 28rem;
+        width: 90%;
+        text-align: center;
+        border: 1.5rem solid #e1e1e1;
+        border-bottom: 5rem solid #e1e1e1;
+        box-shadow: inset 5px 5px 15px #000, 5px 5px 15px v.$gris;
+        // box-shadow: inset 5px 5px 15px #000, 5px 5px 0px #fff, -5px -5px 0px #fff, 5px -5px 0px #fff, -5px 5px 0 #fff;
+        color: v.$fucsia;
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-clip: content-box;
+        background-position: center;
+        justify-content: center;
+        font-family: v.$fuenteTitle;
+        text-shadow: 3px 3px 5px #000;
+        position: relative;
+            &:hover{
+                animation: back_effect 3s ease-out;
+                background-image: url('/../build/img/header.jpg');
+                // transform: rotate(5deg) scale(1.1);
+            }
+        @include m.phone{
+            width: 65%;
+            font-size: 5rem;
+            height: 40rem;
+        }
+        @include m.tablet{
+            width: 85%;
+            font-size: 6rem;
+        }
+        @include m.desktop{
+            width: 75%;
+        }
+        @include m.bigscreen{
+            width: 100%;
+            font-size: 6.5rem;
+        }
+        @include m.giant{
+            font-size: 7rem;
+        }
+    }
+    .a-tattoos{
+        background-image: url('/../build/img/tattoos.webp');        
+    }
+    .a-artwork{
+        background-image: url('/../build/img/artwork.webp');
+    }
+    .a-prensa{
+        background-image: url('/../build/img/prensa.webp');
+    }
+    .a-contacto{
+        background-image: url('/../build/img/contacto.jpg');
+    }
+}
+
+// @keyframes back_effect{
+//     0%{
+//         filter: invert(1);
+//         // background-image: url('/../build/img/header.jpg');
+//     }
+//     100%{
+//         filter: invert(0);
+//         // background-image: url('/../build/img/header.jpg');
+//     }
+// }

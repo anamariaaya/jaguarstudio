@@ -28,4 +28,32 @@
             <h1 class="titulo">Studio</h1>
         </div>' : ''
         ?>
+
+        <?php
+        echo $tattoos ?
+        '<div class="section-title">
+            <h1 class="titulo">tattoos</h1>
+        </div>' : ''
+        ?>
+
+        <?php
+        echo $artwork ?
+        '<div class="section-title">
+            <h1 class="titulo">Artwork</h1>
+        </div>' : ''
+        ?>
+
+        <?php
+        echo $prensa ?
+        '<div class="section-title">
+            <h1 class="titulo">Prensa</h1>
+        </div>' : ''
+        ?>
+
+        <?php
+        echo $contacto ?
+        '<div class="section-title">
+            <h1 class="titulo">Contacto</h1>
+        </div>' : ''
+        ?>
     </header>
