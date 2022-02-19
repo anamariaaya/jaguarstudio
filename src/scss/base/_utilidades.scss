@@ -31,3 +31,6 @@
 .boton-amarillo-block{
     @include m.boton(#f0b20a, block);
 }
+.w-100{
+    width: 100%;
+}
