@@ -27,18 +27,90 @@
     }
 }
 
-.cat-tattoo{
-    width: 75%;
+.grid-categorias{
+    display: block;
     margin: auto;
-    margin-top: 5rem;
+    width: 90%;
+
+    @include m.desktop{
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}
+
+.cat-tattoo{
     h2{
         text-transform: capitalize;
+        text-align: center;
+        @include m.desktop{
+            text-align: left;
+        }
     }
     .grid-tattoo{
-        @include m.grid(4, 3rem);
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin: auto;
+        place-items: center;
+        @include m.phone{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 65%;
+        }
+        @include m.medio{
+            grid-template-columns: repeat(4, 1fr);
+            width: 75%;
+        }
+        @include m.desktop{
+            width: auto;
+            margin: 0;
+        }
         img{
-            max-width: 30rem;
-            max-height: 32rem;
+            filter: grayscale(1);
+            max-width: 14rem;
+            max-height: 11rem;
+            width: 14rem;
+            height: 11rem;
+            object-fit: cover;
+
+            &:hover{
+                filter: none;
+                cursor: pointer;
+            }
+
+            @include m.medio{
+                max-width: 13rem;
+                max-height: 11rem;
+                width: 13rem;
+                height: 11rem;
+            }
+            @include m.tablet{
+                max-width: 14rem;
+                max-height: 11rem;
+                width: 14rem;
+                height: 11rem;
+            }
+            @include m.desktop{
+                max-width: 11rem;
+                max-height: 9rem;
+                width: 11rem;
+                height: 9rem;
+            }
+            @include m.bigscreen{
+                max-width: 14rem;
+                max-height: 11rem;
+                width: 14rem;
+                height: 11rem;
+            }
+            @include m.giant{
+                max-width: 24rem;
+                max-height: 21rem;
+                width: 24rem;
+                height: 21rem;
+            }
         }
     }
 }

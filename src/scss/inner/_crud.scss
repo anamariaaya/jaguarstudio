@@ -1,0 +1,59 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alerta{
+    padding: .5rem;
+    text-align: center;
+    color: v.$blanco;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    
+    &.error{
+        background-color: #8f1f1f;
+    }
+
+    &.exito{
+        background-color: #07cc17;
+    }
+}
+
+.formulario{
+    fieldset{
+        border: 2px dashed v.$blanco;
+        margin-bottom: 3rem;
+    }
+    label,
+    legend,
+    p{  
+        margin: 2rem 0 0 0;
+        color: v.$blanco;
+        font-family: v.$fuenteTexto;
+    }
+
+    input:not([type="submit"]),
+    textarea,
+    select{
+        color: v.$blanco;
+        font-weight: 600;
+        border: 1px solid v.$blanco;
+        background-color: #1d1d1d ;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    legend{
+        font-weight: v.$bold;
+        color: v.$fucsia;
+        font-size: 3.2rem;
+    }
+    label{
+        font-weight: v.$regular;
+        display: block;
+        font-size: 2.6rem;
+    }
+}
+
+table.propiedades td {
+    color: v.$blanco;
+}

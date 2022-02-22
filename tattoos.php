@@ -33,21 +33,14 @@
     incluirTemplate('header',$inicio = false, $tattoos = true);
 ?>
 
-<main>
-    <nav class="categorias">
-        <?php while($nombre = mysqli_fetch_assoc($enlaces)):?>
-            <a href="#<?php echo $nombre['nombre'] ?>"
-            name="<?php echo $nombre['id'] ?>">
-            <?php echo $nombre['nombre'] ?>
-            </a>
-        <?php endwhile; ?>
-    </nav>
+<main class="grid-categorias">
+
     
     <div class="cat-tattoo" id="animals">
         <h2>Animals</h2>
         <div class="grid-tattoo">
             <?php while($animals = mysqli_fetch_assoc($res_animals)):?>      
-                <img src="/build/img/<?php echo $animals['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$animals['id'];?>">
+                <img src="images/<?php echo $animals['nombre']?>" alt="<?php echo 'Tatuaje '.$animals['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>
@@ -56,7 +49,7 @@
         <h2>Brush Strokes</h2>
         <div class="grid-tattoo">
             <?php while($brush = mysqli_fetch_assoc($res_brush)):?>      
-                <img src="/build/img/<?php echo $brush['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$brush['id'];?>">
+                <img src="images/<?php echo $brush['nombre']?>" alt="<?php echo 'Tatuaje '.$brush['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>
@@ -65,7 +58,7 @@
         <h2>cartoon</h2>
         <div class="grid-tattoo">
             <?php while($cartoon = mysqli_fetch_assoc($res_cartoon)):?>      
-                <img src="/build/img/<?php echo $cartoon['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$cartoon['id'];?>">
+                <img src="images/<?php echo $cartoon['nombre']?>" alt="<?php echo 'Tatuaje '.$cartoon['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>
@@ -74,7 +67,7 @@
         <h2>dark</h2>
         <div class="grid-tattoo">
             <?php while($dark = mysqli_fetch_assoc($res_dark)):?>      
-                <img src="/build/img/<?php echo $dark['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$dark['id'];?>">
+                <img src="images/<?php echo $dark['nombre']?>" alt="<?php echo 'Tatuaje '.$dark['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>
@@ -83,7 +76,7 @@
         <h2>geometry</h2>
         <div class="grid-tattoo">
             <?php while($geometry = mysqli_fetch_assoc($res_geometry)):?>      
-                <img src="/build/img/<?php echo $geometry['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$geometry['id'];?>">
+                <img src="images/<?php echo $geometry['nombre']?>" alt="<?php echo 'Tatuaje '.$geometry['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>
@@ -92,7 +85,7 @@
         <h2>lettering</h2>
         <div class="grid-tattoo">
             <?php while($lettering = mysqli_fetch_assoc($res_lettering)):?>      
-                <img src="/build/img/<?php echo $lettering['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$lettering['id'];?>">
+                <img src="images/<?php echo $lettering['nombre']?>" alt="<?php echo 'Tatuaje '.$lettering['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>
@@ -101,7 +94,7 @@
         <h2>organic</h2>
         <div class="grid-tattoo">
             <?php while($organic = mysqli_fetch_assoc($res_organic)):?>      
-                <img src="/build/img/<?php echo $organic['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$organic['id'];?>">
+                <img src="images/<?php echo $organic['nombre']?>" alt="<?php echo 'Tatuaje '.$organic['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>
@@ -110,7 +103,7 @@
         <h2>oriental</h2>
         <div class="grid-tattoo">
             <?php while($oriental = mysqli_fetch_assoc($res_oriental)):?>      
-                <img src="/build/img/<?php echo $oriental['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$oriental['id'];?>">
+                <img src="images/<?php echo $oriental['nombre']?>" alt="<?php echo 'Tatuaje '.$oriental['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>
@@ -119,7 +112,7 @@
         <h2>portrait</h2>
         <div class="grid-tattoo">
             <?php while($portrait = mysqli_fetch_assoc($res_portrait)):?>      
-                <img src="/build/img/<?php echo $portrait['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$portrait['id'];?>">
+                <img src="images/<?php echo $portrait['nombre']?>" alt="<?php echo 'Tatuaje '.$portrait['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>
@@ -128,7 +121,7 @@
         <h2>sketch</h2>
         <div class="grid-tattoo">
             <?php while($sketch = mysqli_fetch_assoc($res_sketch)):?>      
-                <img src="/build/img/<?php echo $sketch['nombre']?>.jpg" alt="<?php echo 'Tatuaje '.$sketch['id'];?>">
+                <img src="images/<?php echo $sketch['nombre']?>" alt="<?php echo 'Tatuaje '.$sketch['id'];?>">
             <?php endwhile; ?> 
         </div>
     </div>

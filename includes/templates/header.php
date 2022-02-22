@@ -17,8 +17,8 @@
             <a href="/" class="<?php echo $inicio ? 'no-filter' : ''; ?>">Home</a>
             <a href="/tattoos.php" class="<?php echo $tattoos ? 'no-filter' : ''; ?>">Tattoos</a>
             <a href="/artwork.php" class="<?php echo $artwork ? 'no-filter' : ''; ?>">Artwork</a>
-            <a href="/prensa.php" class="<?php echo $prensa ? 'no-filter' : ''; ?>">Prensa</a>
-            <a href="/contacto.php" class="<?php echo $contacto ? 'no-filter' : ''; ?>">Contacto</a>
+            <a href="/prensa.php" class="<?php echo $prensa ? 'no-filter' : ''; ?>">Press</a>
+            <a href="/contacto.php" class="<?php echo $contacto ? 'no-filter' : ''; ?>">Contact</a>
         </nav>
         
         <?php
@@ -46,14 +46,14 @@
         <?php
         echo $prensa ?
         '<div class="section-title">
-            <h1 class="titulo">Prensa</h1>
+            <h1 class="titulo">Press</h1>
         </div>' : ''
         ?>
 
         <?php
         echo $contacto ?
         '<div class="section-title">
-            <h1 class="titulo">Contacto</h1>
+            <h1 class="titulo">Contact</h1>
         </div>' : ''
         ?>
     </header>

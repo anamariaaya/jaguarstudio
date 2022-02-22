@@ -69,7 +69,7 @@
             }
             @include m.tablet{
               font-size: 4.2rem;
-              filter: blur(3px);
+              filter: blur(7px);
               width: auto;
             }
             @include m.desktop{

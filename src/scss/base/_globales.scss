@@ -2,6 +2,7 @@
 @use 'variables' as v;
 @use 'mixins' as m;
 
+
 @font-face{
     font-family:'led';
     src:url('../fonts/TheLedDisplaySt.ttf');
@@ -11,6 +12,12 @@
     font-family:'impact';
     src:url('../fonts/321impact.ttf');
 }
+
+@font-face{
+    font-family:'rustic';
+    src:url('../fonts/rustic.otf');
+}
+
 
 html {
     font-size: 62.5%;
@@ -80,9 +87,12 @@ h2 {
         font-size: 4.2rem;
     }
     @include m.tablet{
-        font-size: 6rem;
+        font-size: 5.5rem;
     }
     @include m.desktop{
+        font-size: 6.2rem;
+    }
+    @include m.bigscreen{
         font-size: 8rem;
     }
 }

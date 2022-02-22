@@ -14,14 +14,14 @@
     </div>
 </main>
 
-<section class="secciones">
+<!-- <section class="secciones">
     <div class="enlaces">
         <a class="a-tattoos" href="tattoos.php">Tattoos</a>
         <a class= "a-artwork" href="artwork.php">Artwork</a>
         <a class="a-prensa" href="prensa.php">Prensa</a>
         <a class="a-contacto" href="contacto.php">Contacto</a>
     </div>
-</section>
+</section> -->
     
 <?php
     incluirTemplate('footer');
